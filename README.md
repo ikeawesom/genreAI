@@ -4,12 +4,37 @@ This project leverages machine learning techniques to classify audio files into 
 ## Features
 - Classifies audio files into genres (e.g., rock, pop, classical, jazz).
 - Open-source and available for contributions.
+- Extracts audio features for analysis _(coming soon)_.
+- Provides a web interface for easy interaction _(coming soon)_.
 
 ## Dataset
 The dataset used for training the model is the GTZAN dataset, which contains 1000 audio tracks categorized into 10 different genres. The dataset includes extracted audio features (MFCCs) from these audio files. Find out more about GTZAN [here](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/data).
 
 ## Model
 The model is built using TensorFlow/Keras. It consists of a simple neural network that processes the MFCC features and outputs the predicted genre.
+
+## Installation
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+```sh
+git clone https://github.com/ikeawesom/genreAI.git
+cd genreAI
+```
+
+2. Install the required dependencies:
+```sh
+pip install -r requirements.txt
+```
+
+3. Download the GTZAN dataset:
+- From [this](https://github.com/ikeawesom/genreAI/tree/main/datasets) repo OR [Kaggle](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/data)
+- Extract the dataset and place it in the ./datasets directory.
+  
+4. Train the model:
+```sh
+python train.py
+```
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:

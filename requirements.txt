@@ -1,3 +1,4 @@
 pandas
 tensorflow
+librosa
 scikit-learn

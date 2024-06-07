@@ -45,5 +45,5 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 model.fit(X_train, y_train, epochs=i, validation_data=(X_test, y_test))
 
 # saves model
-model.save('audio-to-genre-model.keras')
+model.save('genreAI_model.keras')
 print("Model saved.")

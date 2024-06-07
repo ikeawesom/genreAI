@@ -36,6 +36,19 @@ pip install -r requirements.txt
 python train.py
 ```
 
+## Usage
+1. Modify the `MODEL` and `FILE_PATH` variables within `app.py` to use your preferred model on a sample audio file of your choice. The sample model `genreAI_model.keras` and audio file `test.wav` has been provided within this repo.
+```python
+MODEL = "genreAI_model.keras"
+FILE_PATH = "test.wav"
+```
+
+2. Run `app.py`.
+```sh
+python app.py
+>> Genre is rock.
+```
+
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
 

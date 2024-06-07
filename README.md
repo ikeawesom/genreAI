@@ -4,7 +4,7 @@ This project leverages machine learning techniques to classify audio files into 
 ## Features
 - Classifies audio files into genres (e.g., rock, pop, classical, jazz).
 - Open-source and available for contributions.
-- Extracts audio features for analysis _(coming soon)_.
+- Extracts audio features for analysis.
 - Provides a web interface for easy interaction _(coming soon)_.
 
 ## Dataset

@@ -4,7 +4,7 @@ This project leverages machine learning techniques to classify audio files into 
 ## Features
 - Classifies audio files into genres (e.g., rock, pop, classical, jazz).
 - Open-source and available for contributions.
-- Extracts audio features for analysis _(coming soon)_.
+- Extracts audio features for analysis.
 - Provides a web interface for easy interaction _(coming soon)_.
 
 ## Dataset
@@ -36,13 +36,26 @@ pip install -r requirements.txt
 python train.py
 ```
 
+## Usage
+1. Modify the `MODEL` and `FILE_PATH` variables within `app.py` to use your preferred model on a sample audio file of your choice. The sample model `genreAI_model.keras` and audio file `test.wav` has been provided within this repo.
+```python
+MODEL = "genreAI_model.keras"
+FILE_PATH = "test.wav"
+```
+
+2. Run `app.py`.
+```sh
+python app.py
+>> Genre is rock.
+```
+
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
 
 1. Fork the repository.
-2. Create a new branch (git checkout -b feature/your-feature).
-3. Commit your changes (git commit -m 'Add some feature').
-4. Push to the branch (git push origin feature/your-feature).
+2. Create a new branch using `git checkout -b feature/your-feature`.
+3. Commit your changes using `git commit -m 'Add some feature'`.
+4. Push to the branch using `git push origin feature/your-feature`.
 5. Open a pull request.
 
 ## License
